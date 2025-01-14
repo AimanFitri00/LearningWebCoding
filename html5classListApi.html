@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .nice{
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myText">My Text</p>
+        <script>
+            var el = document.getElementById("myText");
+            el.classList.add("nice");       // adds the nice class to the paragraph
+            el.classList.remove("nice");    // removes the nice class from the paragraph
+            el.classList.toggle("nice");    // adds the nice class to the paragraph again, since it does not currently contain the nice class
+        
+            if(el.classList.contains("nice")) {
+                alert("The paragraph has the nice class");
+            }
+        </script>
+    </body>
+</html>

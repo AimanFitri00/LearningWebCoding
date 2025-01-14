@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .example strong{
+                color: rebeccapurple
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is the <strong>first</strong> sentence.</p>
+        <p class="example">This is the <strong>second</strong> sentence.</p>
+
+        <p class="nice">This is a nice paragraph.</p>
+        <p class="nice">This is another nice paragraph.</p>
+        <p>This is a standard paragraph.</p>
+
+
+    </body>
+    <script>
+        // this code colors the first nice paragraph in blue
+        var firstNiceParagraph = document.querySelector(".nice");
+        firstNiceParagraph.style.color = "blue";
+    </script>
+    
+</html>

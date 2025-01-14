@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset ="UTF-8">
+    <meta name="viewport" conteent="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <title>Form Elements</title>
+    </head>
+    <body>
+        <form id="example-form" action="add-new-item">
+            <fieldset> <!--create a box around form fieldset-->
+                <legend>Enter Item Details</legend> <!--legend for the box-->
+                <label for="item-name">Item Name: </lable>
+                <input type-"text" name="item-name" placeholder="please enter the item name here" required> <!--text field -->
+                <br><br>
+                <label for="password">Password</lable>
+                <input type="password" name="password" placeholder="please enter the password here" required> <!--password field-->
+                <br><br>
+                <label for="email">Email</lable>
+                <input type="email" name="email" placeholder="please enter email" required> <!--email field-->
+                <br><br>
+                <label for="item-number">Item Number</label>
+                <input type="number" name="item-number" placeholder="please enter the item number here" required> <!-- only number field-->
+                <br><br>
+                <label for="item-type">Item Type</label>
+                <input type="radio" name="item-type" value="new" checked> New <!--radio button--><br>
+                <input type="radio" name="item-type" value="old"> Old<br>
+                <input type="radio" name="item-type" value="used"> Used<br> 
+                <input type="radio" name="item-type" value="refurbished"> Refurbished<br> 
+                <input type="radio" name="item-type" value="custom"> Custom<br>
+                <br><br>
+                <input type="checkbox" name="item-choice" value="new" checked> New <!--checkbox--><br>
+                <input type="checkbox" name="item-choice" value="old"> Old<br>
+                <input type="checkbox" name="item-choice" value="used"> Used<br> 
+                <input type="checkbox" name="item-choice" value="refurbished"> Refurbished<br> 
+                <input type="checkbox" name="item-choice" value="custom"> Custom<br>
+                <button type="submit">Submit Form</button><br> <!--button-->
+                <input type="file" name="file-upload"><br><!--file upload-->
+                <input type="color"/><br> <!--choose color-->
+                <input type="search"/><br> <!--search-->
+                <input type="tel"/><br> <!--telephone number-->
+                <input type="date"/><br> <!--date-->
+                <input type="datetime"/><br> <!--datetime-->
+                <input type="datetime-local"/><br> <!--datetime-local-->
+                <input type="week"/><br> <!--week-->
+                <input type="month"/><br> <!--month-->
+                <input type="time"/><br> <!--time-->
+                <textarea cols="50" rows="20"</textarea></textarea><br> <!--textarea-->
+                <select>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JavaScript</option>
+                    <option value="PY">Python</option>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+    <footer>
+        <p>Created by: Aiman</p>
+    </footer>
+</html>

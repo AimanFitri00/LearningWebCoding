@@ -1,0 +1,176 @@
+.nice{
+    font-family: sans-serif;
+}
+
+/*html {
+    background-color: green;
+    font-size: 20px;
+  }
+  
+  ul {
+    background: red;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+*/
+  /* selects any <span> that is inside a <p>, which is inside an <article>  */
+/*article p span {
+}*/
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+/*h1 + ul + p {
+}*/
+
+p.highlight{
+  background-color: lightgreen;
+}
+
+h1.highlight{
+  background-color: lightcoral;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.notebox {
+  border: 4px solid #666;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+
+h2, 
+.special{           /*h2, .special Or use whitespace for more readability*/
+  color: blue;
+}
+
+li[class^="a"]{           /*class that start with a*/
+  font-size: 120%;
+}
+
+li[class$="a"]{           /*class that end with a*/
+  background-color: aqua;
+}
+
+li[class*="a"]{           /*class that contain a*/
+  color:deeppink;
+}
+
+li[class~="a"]{           /*class that contain "a" as a single word. eg. "a" or "a b". If "ab" then it doesnt work*/
+  color:chartreuse;
+}
+
+article p:first-child{   /*it will always target first p of article*/
+  font-size: 120%;
+  font-weight: bold;
+}
+
+article p:last-child{   /*it will always target last p of article*/
+  font-size: 120%;
+  font-weight: lighter;
+  color:antiquewhite
+}
+
+article p:nth-child(2){   /*it will always target 2nd p of article*/
+  font-size: 120%;
+  font-weight:lighter;
+  color:palevioletred;
+}
+
+article p:only-child{   /*it will always target only p of article*/
+  font-size: 120%;
+  font-weight:lighter;
+  color:darkorange;
+}
+
+input:invalid{   /*it will always target invalid input*/
+  font-size: 120%;
+  font-weight:lighter;
+  color:darkred;
+}
+
+/*User action pseudo-classes*/
+a:link,
+a:visited{
+  color:blue;
+  font-weight: bold;
+}
+
+a:hover{
+  color:yellowgreen;
+}
+
+/*Pseudo-elements*/
+article p::first-letter{  /*it will always target the first letter of p in an article. Another example is ::firstline which will always target the first line following the width of the device*/
+  font-size: 200%;
+  color: red;
+}
+
+
+/*Combining pseudo-classes and pseudo-elements*/
+article p:first-child::first-letter{  /*it will always target the first letter of first p in an article*/
+  font-size: 300%;
+  color: rgb(170, 255, 101);
+}
+
+/*Generating content with ::before and ::after */
+.box::before{
+  content: "This is a box";
+  font-weight: bold;
+  color: blue;
+}
+
+/*A more valid use of these pseudo-elements is to insert an icon, for example the little arrow added in the example below, 
+which is a visual indicator that we wouldn't want read out by a screen reader:*/
+
+.box1::after{
+  content:" ➥";
+}
+
+.box2::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+
+.parent > p {         /*Child Combinator*/
+  color: red;
+}
+
+/*Next-sibling combinator*/
+h3 + p {
+  color: blue;
+}
+
+/*Subsequent-sibling combinator*/
+p ~ img {
+  border:rgb(170, 255, 101) 5px solid;
+  display:flex;
+}
+
+h1 {
+  & ~ p {
+    /* this is parsed by the browser as h1 ~ p */
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+  }
+}
