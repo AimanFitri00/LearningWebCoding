@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding vs Margin</title>
+  <style>
+    .padding-example {
+      background-color: lightblue;
+      padding: 20px;
+      border: 2px solid black;
+    }
+    .margin-example {
+      background-color: lightgreen;
+      margin: 20px;
+      border: 2px solid black;
+    }
+
+    .container {
+    border: 5px solid blue;
+    margin: 100px;
+    }
+
+    .box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+    height: 100px;
+    /* try changing the margin properties: */
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+    }
+
+    .container1 {
+    border: 5px solid blue;
+    margin: 40px;
+    }
+
+    /*p {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+    }*/
+
+     /*Even for .one margin-bot: 50px and .two: 30px, the margin between one and two is still 50px not total one + two. 
+     If .one margin-bot: 50px and .two: -30px, then it will become -20px. */
+    .one {                        
+    margin-bottom: 50px;            
+    }
+
+    .two {
+    margin-top: 30px;
+    }
+
+    .container2 {
+    margin: 40px;
+    padding: 20px;
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double rgb(23 45 145);
+    }
+
+    .box2 {
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid #333333;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+    }
+
+    p.inlineClass{
+    border: 2px solid rebeccapurple;
+    width: 200px;
+    }
+    span.inlineSpan{
+    margin: 20px;
+    padding: 20px;
+    width: 80px;
+    height: 150px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    display: inline-block; /*can use block/inline-block/inline/inline-flex*/
+    }
+    ul {
+    font-family: sans-serif;
+    display: flex;
+    list-style: none;
+    border: 1px solid #000;
+    }
+
+    li {
+    margin: 5px;
+    }
+
+    .links-list a {
+    background-color: rgb(179 57 81);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    }
+
+    .links-list a:hover {
+    background-color: rgb(66 28 40);
+    color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Padding vs Margin</h1>
+
+  <div class="padding-example">This has 20px padding inside the border.</div>
+  <div class="margin-example">This has 20px margin outside the border.</div>
+
+  <div class="container">
+    <div class="box">Change my margin.</div>
+  </div>
+  
+  <div class="container1">
+    <p class="one">I am paragraph one.</p>
+    <p class="two">I am paragraph two.</p>
+  </div>
+  
+
+  <div class="container2">
+    <div class="box2">Change my borders.</div>
+  </div>
+
+  <p class="inlineClass">
+    I am a paragraph and this is a <span class="inlineSpan">span</span> inside that paragraph. A span
+    is an inline element and so does not respect width and height.
+  </p>
+  
+  <nav>
+    <ul class="links-list">
+      <li><a href="">Link one</a></li>
+      <li><a href="">Link two</a></li>
+      <li><a href="">Link three</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

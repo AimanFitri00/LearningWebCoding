@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Example</title>
+  <style>
+    .container {
+      margin: 20px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .block {
+      display: block;
+      background-color: lightblue;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .flex {
+      display: flex;
+      background-color: lightyellow;
+      margin: 5px;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .inline-flex {
+      display: inline-flex;
+      background-color: lightpink;
+      margin: 5px;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .child {
+      background-color: lightgray;
+      padding: 10px;
+      border: 1px solid darkgray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Display Examples</h1>
+
+  <!-- Block Example -->
+  <div class="container">
+    <h2>Block</h2>
+    <div class="block">Block 1</div>
+    <div class="block">Block 2</div>
+  </div>
+
+  <!-- Inline Example -->
+  <div class="container">
+    <h2>Inline</h2>
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+  </div>
+
+  <!-- Flex Example -->
+  <div class="container">
+    <h2>Flex</h2>
+    <div class="flex">
+      <div class="child">Flex Child 1</div>
+      <div class="child">Flex Child 2</div>
+      <div class="child">Flex Child 3</div>
+    </div>
+  </div>
+
+  <!-- Inline-Flex Example -->
+  <div class="container">
+    <h2>Inline-Flex</h2>
+    <span class="inline-flex">
+      <div class="child">Inline-Flex Child 1</div>
+      <div class="child">Inline-Flex Child 2</div>
+    </span>
+    <span class="inline">This is inline with the inline-flex container</span>
+  </div>
+  <br>
+  <span style="display: inline; background-color: lightblue; padding: 5px;">Inline 1</span>
+  <span style="display: inline; background-color: lightgreen; padding: 5px;">Inline 2</span>
+  <br><br>
+  <div style="display: flex; background-color: lightblue; padding: 10px;">
+    <div style="background-color: lightgray; padding: 10px; margin: 5px;">Flex Child 1</div>
+    <div style="background-color: lightgray; padding: 10px; margin: 5px;">Flex Child 2</div>
+    <div style="background-color: lightgray; padding: 10px; margin: 5px;">Flex Child 3</div>
+  </div>
+  <br><br>
+  <span style="display: inline-flex; background-color: lightblue; padding: 10px;">
+    <div style="background-color: lightgray; padding: 10px; margin: 5px;">Inline-Flex Child 1</div>
+    <div style="background-color: lightgray; padding: 10px; margin: 5px;">Inline-Flex Child 2</div>
+  </span>
+  <span style="background-color: lightgreen; padding: 5px;">This is inline with inline-flex.</span>
+  
+</body>
+</html>

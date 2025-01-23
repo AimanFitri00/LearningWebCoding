@@ -1,3 +1,6 @@
+
+/*This is for task 1*/
+/*
 body {
     font: 1.2em / 1.5 sans-serif;
   }
@@ -13,4 +16,78 @@ h2 {
 
 span{
     font-size: 200%;
+}*/
+
+/*This is for task 2*/
+/*
+.special {
+    background-color: yellow;
 }
+
+.alert{
+    border: 1px grey solid;
+}
+
+.alert.stop{
+    background-color: red;
+}
+
+.alert.go{
+    background-color: green;
+}
+*/
+
+/*This is for task 3*/
+
+/*
+a:visited{
+    color:green
+}
+a:hover{
+    text-decoration: none;
+}
+a:link {                    apply for link that has not been visited
+    color: orange;
+}
+
+.container p:first-child{               apply for the first paragraph in the container
+    font-size : 150%;
+}
+
+.container p:first-child::first-line{  apply for the first line of the first paragraph in the container
+    color:red;
+}
+
+tr:nth-child(even){                                         apply for even row in the table
+    background-color: lightgrey;
+}
+*/
+
+/*This is for task 4*/
+
+/*h2 + p{
+    color: red
+}
+*/
+/*.list > li{                            ul > li why this is not working because the parent is ul and the child is li. The class is declared at ul not div that why it style the child.
+    border-bottom: 1px solid grey;
+    list-style: none;
+}*/
+
+/*This is for task 5*/
+a {
+    border: 5px solid grey;
+  }
+
+  a[title]{
+    border-color:pink;
+  }
+
+  a[href^="https"]{
+    border-color: green;
+  }
+
+  a[href*="contact"]{
+    border-color: orange;
+  }
+
