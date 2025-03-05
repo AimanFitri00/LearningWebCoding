@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        #container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Palindrome Checker</h2>
+        <input type="text" id="text-input" placeholder="Enter text">
+        <button id="check-btn">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function isPalindrome(str) {
+            // Normalize the string: remove non-alphanumeric characters and convert to lowercase
+            let cleanStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+            console.log("Cleaned string:", cleanStr);
+            
+            // Reverse the cleaned string
+            let reversedStr = cleanStr.split("").reverse().join("");
+            console.log("Reversed string:", reversedStr);
+            
+            // Check if the original cleaned string matches the reversed version
+            return cleanStr === reversedStr;
+        }
+
+        document.getElementById("check-btn").addEventListener("click", function () {
+            let input = document.getElementById("text-input").value.trim();
+            let resultDiv = document.getElementById("result");
+
+            // Check if input is empty
+            if (!input) {
+                alert("Please input a value");
+                return;
+            }
+
+            // Check if input is a palindrome
+            let isPalin = isPalindrome(input);
+            resultDiv.textContent = `"${input}" is ${isPalin ? "" : "not "}a palindrome.`;
+        });
+    </script>
+
+</body>
+</html>
